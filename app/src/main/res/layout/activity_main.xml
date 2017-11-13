@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jhorje.almacenamientosimple.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lyPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lyCrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@android:color/background_light"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/editNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editDia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Dia"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editMes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Mes"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btnGuardarDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:text="Gaurdar pago" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/packBtnPrin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCrear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:text="Crear" />
+
+            <Button
+                android:id="@+id/btnCargar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:text="Cargar" />
+
+            <Button
+                android:id="@+id/BtnBorrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:text="Borrar" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hola Juanjo"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtPago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tu ultimo pago fue el 3 de marzo"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+</ScrollView>
