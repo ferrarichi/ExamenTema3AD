@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     //Variables
-    private LinearLayout lyPrincipal, lyBtns, lyCrear;
+    private LinearLayout  lyCrear;
     private boolean panelGuardar;
 
     //Crear datos
